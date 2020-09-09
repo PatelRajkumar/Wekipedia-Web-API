@@ -11,4 +11,5 @@ app.set('views', viewsPath)
 app.get('', (req, res) => {
     res.render('index.hbs')
 })
-app.listen(8000, () => console.log("server is running......"));
+const port = process.env.PORT || 8000
+app.listen(port, () => console.log("server is running......"));
